@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Panda</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="welcome">Good Evening , </string>
+    <string name="dinner">what\'s for dinner? There are \n722 resturants</string>
+    <string name="home">Home</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="favorite">Favorites</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="cart">Cart</string>
+    <string name="delivery">Restaurant Delivery</string>
+    <string name="firstOrder">FIRST ORDER voucher use and get $20 off or more. T &amp; applied</string>
+
+    <string name="already">Already  Have An Account?</string>
+    <string name="signin">Sign in</string>
+    <string name="have_and_account">Don\'t have an account ?</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="message_happy">We Are Happy To Have You! Get Ready To Buy Fresh And Freeze , Grocery  And Any Thing You Want</string>
+    <string name="profile">Profile</string>
+    <string name="category">Category</string>
+    <string name="top_dishesh">Top Dishes</string>
+    <string name="marts">Marts</string>
+    <string name="fav">Favorite Restaurants</string>
+    <string name="update">update</string>
+    <string name="mart_name">Mart Name</string>
+    <string name="search">Search for shops &amp; restaurants</string>
+    <string name="shop">Shop Now</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="cartTotal">Cart Total</string>
+    <string name="tax">Tax</string>
+    <string name="delivery_fee">Delivery</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="sub_total">SubTotal</string>
+    <string name="name">Name</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+    <string name="cart_empty">Your Cart Is Empty</string>
+    <string name="shopnow">Show Now</string>
+    <string name="order_placed">Your Order Has Been Placed</string>
+    <string name="thanks">Thank You for purchasing our Product Please Come Again.</string>
+    <string name="phone">+02</string>
+</resources>

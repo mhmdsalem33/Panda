@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_15sdp">
+
+
+    <ImageView
+        android:id="@+id/img_notification"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/foodpanadalogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        />
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        app:layout_constraintTop_toTopOf="@+id/img_notification"
+        app:layout_constraintStart_toEndOf="@+id/img_notification"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/notification_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Message"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintTop_toBottomOf="@+id/notification_title"
+        app:layout_constraintStart_toStartOf="@+id/notification_title"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

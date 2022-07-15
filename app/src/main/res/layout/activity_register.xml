@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.RegisterActivity">
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/reg_img"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img16"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius_bottom_left="@dimen/_10sdp"
+        app:riv_corner_radius_bottom_right="@dimen/_10sdp"
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/reg_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="40dp"
+
+        >
+
+
+        <!--
+        <EditText
+            android:id="@+id/name_reg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:background="@drawable/round_register"
+            android:paddingStart="20dp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:drawableTint="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            android:textCursorDrawable="@drawable/curser_color"
+            android:textColor="@color/purple_200"
+            />
+        <EditText
+            android:id="@+id/email_reg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:background="@drawable/round_register"
+            android:paddingStart="20dp"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:layout_marginTop="30dp"
+            android:drawableTint="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            android:textCursorDrawable="@drawable/curser_color"
+            android:textColor="@color/purple_200"
+            />
+
+        <EditText
+            android:id="@+id/password_reg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_register"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Password"
+            android:paddingStart="20dp"
+            android:inputType="textPassword"
+            android:drawableTint="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            android:textCursorDrawable="@drawable/curser_color"
+            android:textColor="@color/purple_200"
+            />
+
+
+-->
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/name_Reg"
+            android:background="@drawable/background_log"
+            android:hint="@string/name"
+            android:drawableLeft="@drawable/ic_account"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:drawableTint="@color/purple_200"
+            android:layout_marginBottom="@dimen/_10sdp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_Reg"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:drawableTint="@color/purple_200"
+            android:background="@drawable/background_log"
+            android:hint="@string/Email"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_reg"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:drawableTint="@color/purple_200"
+            android:background="@drawable/background_log"
+            android:hint="@string/phone"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_Reg"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:drawableTint="@color/purple_200"
+            android:background="@drawable/background_log"
+            android:hint="@string/password"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:inputType="textPassword"
+
+            />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/reg_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already"
+                android:layout_marginEnd="2dp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:id="@+id/signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signin"
+                android:textColor="@color/purple_200"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

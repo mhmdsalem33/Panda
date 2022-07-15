@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_row"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+
+
+
+            >
+
+
+
+            <TextView
+                android:id="@+id/meal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Meal Name"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/myfont"
+                />
+
+
+            <TextView
+                android:id="@+id/row_description"
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/meal_name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="2 beef burger patty , beef bacon"
+                android:layout_marginStart="@dimen/_10sdp"
+
+
+                />
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/row_description"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="$10"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/myfont"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_circle"
+                app:tint="@color/purple_200"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_9sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+
+                />
+            <TextView
+                android:id="@+id/quntity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toEndOf="@+id/add"
+                app:layout_constraintTop_toTopOf="@+id/add"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/myfont"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                />
+
+
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remove_circle"
+                app:tint="@color/purple_200"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price"
+                app:layout_constraintStart_toEndOf="@+id/quntity"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+
+                />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_row"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/bf"
+
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dip"
+        app:riv_border_width="2dip"
+        app:riv_border_color="@color/purple_200"
+        app:riv_mutate_background="true"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/_10sdp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/add_to_basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To \nBasket"
+        android:textAllCaps="false"
+        android:textColor="#878787"
+        android:fontFamily="@font/myfont"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/viewf"
+        android:textSize="@dimen/_10ssp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@drawable/row_background"
+
+        />
+    <ImageView
+        android:id="@+id/fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintTop_toTopOf="@+id/img_row"
+        app:layout_constraintEnd_toStartOf="@+id/img_row"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:tint="@color/purple_200"
+        />
+
+
+    <View
+        android:id="@+id/viewf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

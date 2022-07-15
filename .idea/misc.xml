@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/drawable/background_shop.xml" value="0.37962962962962965" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/activity_place_order.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/activity_register.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/activity_start.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/category_mart_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/custom_layout_mart.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/custom_toolbar.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/favorite_mart_row.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_cart.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_favorite.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_mart.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_mart_category_details.xml" value="0.5" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_profile.xml" value="0.325" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_restaurant_details.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_restaurants.xml" value="0.25" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_resturants.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_search.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/fragment_search_mart_category.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/mart_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/my_cart_row.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/notification_row.xml" value="0.33" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/restaurant_row.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/resturant_details_row.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/slider_row.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/layout/view_pager_row.xml" value="0.337037037037037" />
+        <entry key="..\:/Users/mhmds/AndroidStudioProjects/Panda/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

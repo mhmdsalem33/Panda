@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp"
+
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:src="@drawable/smash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+        <TextView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/background_ress"
+            android:text="New"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="-15dp"
+
+            />
+
+
+        <!--
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="@dimen/_120sdp"
+           android:layout_height="wrap_content"
+           app:layout_constraintBottom_toBottomOf="@+id/img_category"
+           app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:background="@drawable/restaurnt_backround"
+            android:padding="@dimen/_2sdp"
+            android:visibility="visible"
+           >
+
+
+
+
+           <LinearLayout
+               android:id="@+id/linear_res"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:orientation="vertical"
+
+               >
+
+               <TextView
+                   android:id="@+id/name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/myfont"
+                   android:text="Super Crunch"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/_10ssp" />
+
+               <TextView
+                   android:id="@+id/price"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="45.99 EGP"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/_10ssp"
+                   android:fontFamily="@font/myfont"
+                   />
+
+
+
+           </LinearLayout>
+
+           <ImageView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_baseline_arrow_forward_24"
+               app:tint="@color/white"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toEndOf="@+id/linear_res"
+               android:layout_marginStart="@dimen/_15sdp"
+               android:background="@drawable/arrow_background"
+
+               />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+            -->
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_restuant"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/bf"
+            app:layout_constraintTop_toBottomOf="@+id/img_category"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="100dip"
+            app:riv_border_width="2dip"
+            app:riv_border_color="@color/purple_200"
+            app:riv_mutate_background="true"
+            android:layout_marginStart="@dimen/_10sdp"
+
+
+            />
+
+
+
+       <LinearLayout
+           android:id="@+id/linear_name"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           app:layout_constraintStart_toEndOf="@+id/img_restuant"
+           app:layout_constraintTop_toTopOf="@+id/img_restuant"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:gravity="center_vertical"
+
+           >
+           <TextView
+               android:id="@+id/name_resturant"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Crunch"
+               android:textSize="@dimen/_15ssp"
+               android:textColor="@color/black"
+               android:layout_marginStart="@dimen/_5sdp"
+               android:layout_weight="1"
+
+               />
+
+
+           <ImageView
+               android:layout_width="@dimen/_30sdp"
+               android:layout_height="@dimen/_20sdp"
+               android:src="@drawable/ic_baseline_star_rate_24"
+               app:tint="@color/purple_200"
+
+               />
+
+
+           <TextView
+               android:id="@+id/rating"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="5.1"
+               android:textColor="@color/purple_200"
+               android:textSize="@dimen/_12ssp"
+               android:layout_marginBottom="@dimen/_2sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+
+
+               />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/img_restuant"
+            app:layout_constraintTop_toBottomOf="@+id/linear_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5sdp"
+
+            >
+
+            <TextView
+                android:id="@+id/resturant_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fast Food , Chicken , Sandwiches"
+                android:layout_weight="1"
+                android:textSize="@dimen/_10ssp"
+                />
+            <!--
+                <ImageView
+                    android:id="@+id/btn_credit"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/cre"
+                    app:tint="@color/purple_200"
+
+
+
+                    />
+
+-->
+
+
+        </LinearLayout>
+
+
+        <!--
+      <LinearLayout
+          android:id="@+id/linear_diss"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/img_restuant"
+          app:layout_constraintStart_toStartOf="parent"
+          android:orientation="horizontal"
+          android:background="@drawable/disscount_res"
+          android:padding="@dimen/_5sdp"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:layout_marginStart="@dimen/_20sdp"
+          android:layout_marginBottom="@dimen/_5sdp"
+          >
+          <ImageView
+              android:layout_width="@dimen/_15sdp"
+              android:layout_height="@dimen/_15sdp"
+              android:src="@drawable/discount"
+              android:layout_marginEnd="@dimen/_5sdp"
+              app:tint="@color/white"
+
+              />
+          <TextView
+              android:id="@+id/disscount_res"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="40$ on order above 150$"
+              android:textSize="@dimen/_10ssp"
+              android:textColor="@color/white"
+              />
+
+
+
+      </LinearLayout>
+-->
+        <ImageView
+            android:id="@+id/fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite"
+            app:tint="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@+id/linear_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+
+
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/fav"
+            android:background="@color/purple_200"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_5sdp"
+
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_baseline_access_time_24"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:tint ="@color/purple_200"
+                />
+
+
+                <TextView
+                    android:id="@+id/time_res"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60 mins"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_weight="1"
+
+
+                    />
+
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_baseline_delivery_dining_24"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:tint ="@color/purple_200"
+                />
+
+
+            <TextView
+                android:id="@+id/delivery_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$15"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginEnd="@dimen/_5sdp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

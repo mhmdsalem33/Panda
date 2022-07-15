@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:src="@drawable/img16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="100dip"
+                app:riv_border_width="2dip"
+                app:riv_border_color="@color/purple_200"
+                app:riv_mutate_background="true"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/img_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/name_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/purple_200"
+                    android:elevation="3dp"
+                    android:hint="Your Name"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:paddingStart="20dp"
+                    android:background="@drawable/background_log"
+                    />
+
+                <EditText
+                    android:id="@+id/email_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Your Email"
+
+                    android:paddingStart="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="3dp"
+                    android:layout_marginTop="30dp"
+                    android:drawableTint="@color/purple_200"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:background="@drawable/background_log"
+                    />
+
+                <EditText
+                    android:id="@+id/number_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+
+                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="3dp"
+                    android:hint="Your Number"
+                    android:paddingStart="20dp"
+                    android:drawableTint="@color/purple_200"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:background="@drawable/background_log"
+
+                    />
+                <EditText
+                    android:id="@+id/address_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+
+                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="3dp"
+                    android:hint="Your Address"
+                    android:paddingStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableTint="@color/purple_200"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:background="@drawable/background_log"
+                    />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linear_profile"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        >
+
+        <Button
+            android:id="@+id/btn_profile_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linear_profile"
+            android:text="@string/update"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+
+            />
+
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Logout"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
